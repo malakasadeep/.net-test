@@ -1,0 +1,8 @@
+<div class="sidebar">
+  <div class="menu-item" *ngFor="let item of menuItems">
+    <div class="icon-container">
+      <lucide-angular [img]="item.icon"></lucide-angular>
+    </div>
+    <span class="label">{{ item.label }}</span>
+  </div>
+</div>

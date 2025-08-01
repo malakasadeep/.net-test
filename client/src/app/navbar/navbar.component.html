@@ -1,0 +1,33 @@
+<nav class="navbar">
+  <div class="navbar-brand">
+    <lucide-angular [img]="homeicon" class="nav-icon"></lucide-angular>
+    <img class="logo" src="images/logo.png" alt="eZuite Logo" />
+  </div>
+
+  <div class="admin-wrapper">
+    <div class="admin-section">
+      <lucide-angular [img]="combine" class="nav-icon"></lucide-angular>
+      <span class="admin-text">Admin > User</span>
+      <i class="fas fa-star"></i>
+      <!-- <lucide-angular [img]="star" class="nav-icon star-icon"></lucide-angular> -->
+      <div class="clip-section">
+        <lucide-angular [img]="clipboard" class="nav-icon"></lucide-angular>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-menu">
+    <div class="navbar-end">
+      <span class="enhancer-text">Enhancer</span>
+      <div class="logo-letter">L</div>
+      <lucide-angular [img]="bell" class="nav-icon notification-icon">
+        <span class="notification-badge"></span>
+      </lucide-angular>
+      <lucide-angular [img]="star" class="nav-icon star-icon"></lucide-angular>
+      <lucide-angular
+        [img]="settings"
+        class="nav-icon settings-icon"
+      ></lucide-angular>
+    </div>
+  </div>
+</nav>

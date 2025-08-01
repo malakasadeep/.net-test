@@ -1,0 +1,16 @@
+.footer {
+  color: #333;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 91%;
+  z-index: 100;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600; /* Make it stand out slightly */
+}
