@@ -48,9 +48,6 @@ namespace Api.Controllers
                 return BadRequest(ModelState);
             }
 
-            employee.UpdatedBy = User.Identity?.Name ?? "API User";
-            employee.Updated = DateTime.Now;
-            
             _context.Employees.Add(employee);
             await _context.SaveChangesAsync();
 
@@ -70,9 +67,6 @@ namespace Api.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            employee.UpdatedBy = User.Identity?.Name ?? "API User";
-            employee.Updated = DateTime.Now;
 
             _context.Entry(employee).State = EntityState.Modified;
 

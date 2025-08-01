@@ -32,12 +32,5 @@ namespace Api.Models
         [Display(Name = "Hire Date")]
         [DataType(DataType.Date)]
         public DateTime HireDate { get; set; }
-        
-        [StringLength(100)]
-        [Display(Name = "Updated By")]
-        public string? UpdatedBy { get; set; }
-        
-        [Display(Name = "Last Updated")]
-        public DateTime Updated { get; set; }
     }
 }

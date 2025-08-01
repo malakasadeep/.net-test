@@ -53,8 +53,6 @@ namespace Api.Controllers
         {
             if (ModelState.IsValid)
             {
-                employee.UpdatedBy = User.Identity?.Name ?? "Unknown";
-                employee.Updated = DateTime.Now;
                 _context.Add(employee);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -92,8 +90,6 @@ namespace Api.Controllers
             {
                 try
                 {
-                    employee.UpdatedBy = User.Identity?.Name ?? "Unknown";
-                    employee.Updated = DateTime.Now;
                     _context.Update(employee);
                     await _context.SaveChangesAsync();
                 }
