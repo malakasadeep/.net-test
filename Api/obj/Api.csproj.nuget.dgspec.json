@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\Intern Assignments\\Assignment\\api\\Api.csproj": {}
+    "D:\\Projects\\Intern Assignments\\Assignment\\Api\\Api.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\Intern Assignments\\Assignment\\api\\Api.csproj": {
+    "D:\\Projects\\Intern Assignments\\Assignment\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\Intern Assignments\\Assignment\\api\\Api.csproj",
+        "projectUniqueName": "D:\\Projects\\Intern Assignments\\Assignment\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "D:\\Projects\\Intern Assignments\\Assignment\\api\\Api.csproj",
+        "projectPath": "D:\\Projects\\Intern Assignments\\Assignment\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\malak\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\Intern Assignments\\Assignment\\api\\obj\\",
+        "outputPath": "D:\\Projects\\Intern Assignments\\Assignment\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\malak\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -44,7 +44,23 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[9.0.0, )"
             }

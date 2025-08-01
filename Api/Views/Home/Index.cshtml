@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Employee Directory</h1>
+    <p>A secure web application for managing employee records.</p>
+    
+    @if (User.Identity?.IsAuthenticated != true)
+    {
+        <div class="mt-4">
+            <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary btn-lg me-3">Login</a>
+            <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-outline-primary btn-lg">Register</a>
+        </div>
+    }
+    else
+    {
+        <div class="mt-4">
+            <p>Welcome back, @User.Identity.Name!</p>
+            <a asp-controller="Employees" asp-action="Index" class="btn btn-primary btn-lg">View Employees</a>
+        </div>
+    }
+</div>
